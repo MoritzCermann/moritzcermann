@@ -1,5 +1,6 @@
 import * as THREE from 'three'
 import ThreeGlobe from 'three-globe'
+import { setImageSources } from './assets.js'
 
 let scene, camera, renderer, globe, controls
 let isDragging = false
@@ -677,4 +678,5 @@ createGlobe()
 addControls()
 animate()
 setupGuessInput()
+setImageSources()
 initImageHoverEffects()
