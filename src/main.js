@@ -48,7 +48,7 @@ function init() {
 }
 
 function createGlobe() {
-  fetch('./ne_110m_admin_0_countries.geojson') //'./ne_50m_admin_0_countries.json'
+  fetch('/ne_110m_admin_0_countries.geojson') //'/ne_50m_admin_0_countries.json'
     .then(res => res.json())
     .then(countries => {
       // Store countries data for click detection
