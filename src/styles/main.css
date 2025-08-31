@@ -1,0 +1,374 @@
+/* Base Desktop Styles */
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000011;
+  overflow: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+
+/* Layout */
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#app {
+  width: 50vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#content {
+  width: 50vw;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #000011;
+  color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Roboto', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  direction: rtl;
+}
+
+#content > * {
+  direction: ltr;
+}
+
+.bio {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.bio-content {
+  padding: 5px;
+  width: 67%;
+}
+
+.bio-text{
+  font-size: 11px;
+  line-height: 1.4;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.bio-content a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.bio-content a:hover {
+  text-decoration: underline;
+}
+
+.bio-image {
+  width: 33%;
+}
+
+#portrait {
+  width: 165px;
+  height: 180px;
+  border-radius: 1%;
+  object-fit: cover;
+}
+
+.table {
+  width: 100%;
+  max-width: 560px;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.section {
+  width: 100%;
+  max-width: 520px;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* Academic Work Entry Style */
+.ac-wo-entry {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.ac-wo-image {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.ac-wo-content {
+  flex: 1;
+}
+
+.ac-wo-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: #4caf50;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.ac-wo-title:hover {
+  text-decoration: underline;
+}
+
+.ac-wo-authors {
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.ac-wo-venue {
+  font-size: 10px;
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.ac-wo-venue strong {
+  color: white;
+  font-weight: 500;
+}
+
+.ac-wo-links {
+  font-size: 10px;
+}
+
+.ac-wo-links a {
+  color: #4caf50;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.ac-wo-links a:hover {
+  text-decoration: underline;
+}
+
+.ac-wo-description {
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Selected Projects Entry Style */
+.se-pr-entry {
+  display: flex;
+  margin-bottom: 30px;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.se-pr-image {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 1px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.se-pr-content {
+  flex: 1;
+}
+
+.se-pr-title {
+  font-size: 11px;
+  font-weight: 500;
+  color: #4caf50;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.se-pr-title:hover {
+  text-decoration: underline;
+}
+
+.se-pr-authors {
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.se-pr-venue {
+  font-size: 10px;
+  color: #ccc;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.se-pr-venue strong {
+  color: white;
+  font-weight: 500;
+}
+
+.se-pr-links {
+  font-size: 10px;
+}
+
+.se-pr-links a {
+  color: #4caf50;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.se-pr-links a:hover {
+  text-decoration: underline;
+}
+
+.se-pr-description {
+  font-size: 10px;
+  color: #ccc;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+
+
+
+/* Contact Links */
+.contact-links {
+  font-size: 11px;
+}
+
+.contact-links a {
+  color: #4CAF50;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+/* Institutions */
+.institutions {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.institutions img {
+  height: 40px;
+  width: auto;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.news-item, .work-item {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+.news-item strong {
+  font-weight: bold;
+  color: white;
+}
+
+.news-item a, .work-item a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.news-item a:hover, .work-item a:hover {
+  text-decoration: underline;
+}
+
+.show-more {
+  color: #4CAF50;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.show-more:hover {
+  text-decoration: underline;
+}
+
+/* Hover Media Styles */
+.image-hover-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+}
+
+.image-hover-container img,
+.image-hover-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.image-hover-container .hover-media {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image-hover-container:hover .original-media {
+  opacity: 0;
+}
+
+.image-hover-container:hover .hover-media {
+  opacity: 1;
+}
+
+/* Globe Info */
+#info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  z-index: 100;
+}

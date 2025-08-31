@@ -1,0 +1,251 @@
+/* Globe Component Styles */
+
+/* Globe Canvas Styles */
+#app canvas {
+  display: block;
+}
+
+/* Globe Info Panel */
+#info h1 {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+#info p {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+/* Globe specific animations and interactions */
+.globe-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Country Info Panel */
+.country-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  max-width: 300px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.country-info.hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+}
+
+.country-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.country-info p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #cccccc;
+  line-height: 1.4;
+}
+
+/* Country Guess Field */
+.country-guess-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Ensure #app has relative positioning for absolute children */
+#app {
+  position: relative;
+}
+
+.country-guess-container.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.country-guess-container input {
+  width: 200px;
+  padding: 8px 12px;
+  font-size: 0.9em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.country-guess-container input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.country-guess-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.guess-feedback {
+  margin-top: 5px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 0.8em;
+  text-align: center;
+  min-height: 16px;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.guess-feedback.correct {
+  color: #4CAF50;
+}
+
+.guess-feedback.incorrect {
+  color: #f44336;
+}
+
+.guess-feedback.waiting {
+  color: #FFC107;
+}
+
+/* Globe Controls */
+.globe-controls {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.control-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+}
+
+.control-btn:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
+}
+
+.control-btn.active {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.grid-icon, .info-icon {
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Info Popup */
+.info-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.info-popup.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.info-content {
+  background: rgba(20, 20, 20, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  backdrop-filter: blur(20px);
+}
+
+.info-content h3 {
+  color: white;
+  margin: 0 0 20px 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.info-content ul {
+  text-align: left;
+  color: #ccc;
+  line-height: 1.6;
+  padding-left: 20px;
+  margin: 20px 0;
+}
+
+.info-content li {
+  margin-bottom: 8px;
+}
+
+.info-content li strong {
+  color: white;
+}
+
+.close-info {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+.close-info:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Future globe enhancements can go here */

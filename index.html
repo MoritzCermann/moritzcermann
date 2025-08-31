@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js Globe</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="src/styles/main.css">
+    <link rel="stylesheet" href="src/styles/components/portfolio.css">
+    <link rel="stylesheet" href="src/styles/components/globe.css">
+    <link rel="stylesheet" href="src/styles/components/buttons.css">
+    <link rel="stylesheet" href="src/styles/mobile.css">
+  </head>
+  <body>
+    <header></header>
+    <main class="container">
+      <div id="content">
+        <div class="bio">
+          <div class="bio-content">
+            <h1 style="text-align: center; font-size: 1.5em; font-weight: normal">Moritz Cermann</h1>
+            <p class="bio-text">I am a student at <a href="https://www.tudelft.nl/over-tu-delft" target="_blank"><strong>TU Delft</strong></a>, Netherlands doing my Master's degree in <a href="https://www.tudelft.nl/onderwijs/opleidingen/masters/gm/msc-geomatics" target="_blank"><strong>Geomatics</strong></a>.</p>
+            <p class="bio-text">I earned my Bachelor of Engineering from the <a href="https://www.thws.de/en/about-thws/" target="_blank"><strong>Technical University for Applied Sciences</strong></a> in Würzburg, Germany and completed an internship at <a href="https://www.lufthansa-technik.com/en" target="_blank"><strong>Lufthansa Technik AG</strong></a> in Hamburg where I worked as an XR Developer on Augmented and Virtual Reality solutions for aviation.</p>
+            <p class="bio-text">My academic and professional interests include geospatial solutions, applied computer vision, deep learning for Earth observation and AR/VR technologies.</p>
+            <div class="contact-links" style="text-align: center;">
+              <a href="mailto:moritz.cermann@gmx.de" target="_blank">Email</a> |
+              <a href="https://github.com/MoritzCermann" target="_blank"> GitHub</a> |
+              <a href="https://www.linkedin.com/in/moritz-cermann/" target="_blank"> LinkedIn</a> |
+              <a href="https://x.com/Cer_Mor" target="_blank"> Twitter</a>
+            </div>
+          </div>
+          <div class="bio-img">
+            <img src="src/01portrait.jpg" alt="Profile Photo" id="portrait">
+          </div>
+        </div>
+
+        <div class="table">
+          <h4 style="font-weight: normal">Academic Work</h2>
+          
+          <div class="ac-wo-entry">
+            <img src="/src/academic-work/thesis-01.jpg" alt="Thesis" class="ac-wo-image" data-hover-src="/src/academic-work/thesis-02.jpg">
+            <div class="ac-wo-content">
+              <a href="https://github.com/MoritzCermann/openscene/tree/custom-dataset-support" class="ac-wo-title">Open-Vocabulary 3D Scene Understanding from RGB Images: A General-Purpose Pipeline for Indoor and Outdoor Environments</a>
+              <div class="ac-wo-authors"><strong>Moritz Cermann</strong></div>
+              <div class="ac-wo-venue">B.Eng. Thesis, THWS</div>
+              <div class="ac-wo-links">
+                <a href="https://drive.google.com/file/d/1Zf60lzBARp-lK8DNbeG6f1bsv-RMRJtl/view?usp=drive_link" target="_blank">thesis</a> | <a href="https://drive.google.com/file/d/1y8UlLioqqbV6IZhb5XHREcGgrOZDLikQ/view?usp=drive_link" target="_blank">poster</a> | <a href="https://github.com/MoritzCermann/openscene/tree/custom-dataset-support" target="_blank">project</a>
+              </div>
+              <div class="ac-wo-description">Created a general-purpose pipeline that reconstructs 3D scenes from RGB images and enables open-vocabulary semantic understanding without requiring depth data or specialized sensors. Successfully demonstrated on both indoor datasets and large-scale urban drone imagery.</div>
+            </div>
+          </div>
+
+          <div class="ac-wo-entry">
+            <img src="./src/academic-work/semseg-01.jpg" alt="Project Thesis" class="ac-wo-image" data-hover-src="./src/academic-work/semseg-02.jpg">
+            <div class="ac-wo-content">
+              <a href="https://github.com/MoritzCermann/unity-semantic-segmentation" target="_blank" class="ac-wo-title">Implementation and Traning of a Semantic Segmentation Model, Deployed for Real-Time Applications using Unity Sentis</a>
+              <div class="ac-wo-authors"><strong>Moritz Cermann</strong></div>
+              <div class="ac-wo-venue">Project Thesis, THWS</div>
+              <div class="ac-wo-links">
+                <a href="https://drive.google.com/file/d/1naZEtZ9zt2DgO-FJhHvL1Tl681ULH24x/view?usp=drive_link" target="_blank">thesis</a> | <a href="https://github.com/MoritzCermann/unity-semantic-segmentation" target="_blank">project</a>
+              </div>
+              <div class="ac-wo-description">Implemented and trained and a lightweight U-Net model for real-time semantic segmentation in urban scenes, optimized for mobile deployment with Unity Sentis.</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="table">
+          <p>Selected Projects</p>
+          
+          <div class="se-pr-entry">
+            <img src="./src/selected-projects/stitch.jpg" alt="Project Thesis" class="se-pr-image" data-hover-src="./src/selected-projects/stitch.jpg">
+            <div class="se-pr-content">
+              <a href="https://devpost.com/software/stitch-evndi4" target="_blank" class="se-pr-title">Stitch - Virtual sewing assistant</a>
+              <div class="se-pr-authors"><strong>Moritz Cermann</strong>, Luisa F., Jennie D., Veronika S.</div>
+              <div class="se-pr-venue">XR Creator Con Hackathon 2024, Berlin ( <span style="color: rgb(165, 0, 0);">First Place - Meta Track</span> )</div>
+              <div class="se-pr-links">
+                <a href="https://www.youtube.com/watch?v=26Ia5xl0SBY" target="_blank">video</a> | <a href="https://devpost.com/software/stitch-evndi4" target="_blank">project</a>
+              </div>
+              <div class="se-pr-description">A mixed reality sewing assistant for Meta Quest 3 that replaces traditional printed patterns with interactive 3D models. It allows the users to extract and trace virtual 2D patterns directly onto fabric.</div>
+            </div>
+          </div>
+
+          <div class="se-pr-entry">
+            <img src="./src/selected-projects/travelcompanion.jpg" alt="Project Thesis" class="se-pr-image" data-hover-src="./src/selected-projects/travelcompanion.jpg">
+            <div class="se-pr-content">
+              <a href="https://devpost.com/software/treavel-companion" target="_blank" class="se-pr-title">travel-compAnIon</a>
+              <div class="se-pr-authors"><strong>Moritz Cermann</strong></div>
+              <div class="se-pr-venue">Google AI Hackathon</div>
+              <div class="se-pr-links">
+                <a href="https://www.youtube.com/watch?v=FaN2UH2XCmo" target="_blank">video</a> | <a href="https://devpost.com/software/treavel-companion" target="_blank">project</a>
+              </div>
+              <div class="se-pr-description">AI travel app that identifies buildings via camera view and provides AR-guided city exploration using Unity, Google Gemini, and location-aware spatial understanding.</div>
+            </div>
+          </div>
+
+          <div class="se-pr-entry">
+            <img src="./src/selected-projects/navigator.jpg" alt="Project Thesis" class="se-pr-image" data-hover-src="./src/selected-projects/navigator.jpg">
+            <div class="se-pr-content">
+              <a href="https://devpost.com/software/navigator-t3layx" target="_blank" class="se-pr-title">navigAtoR</a>
+              <div class="se-pr-authors"><strong>Moritz Cermann</strong></div>
+              <div class="se-pr-venue">Google's Immersive Geospatial Challenge ( <span style="color: rgb(165, 0, 0);">First Place</span> )</div>
+              <div class="se-pr-links">
+                <a href="https://www.youtube.com/watch?v=z3L0cZgtlf4" target="_blank">video</a> | <a href="https://devpost.com/software/navigator-t3layx" target="_blank">project</a>
+              </div>
+              <div class="se-pr-description">AR navigation app that replaces traditional 2D maps with photorealistic 3D environments. Features real-time routing, POI discovery, and object placement in AR, working globally with ARCore and Google APIs.</div>
+            </div>
+          </div>
+
+          <div class="se-pr-entry">
+            <img src="./src/selected-projects/argps.jpg" alt="Project Thesis" class="se-pr-image" data-hover-src="./src/selected-projects/argps.jpg">
+            <div class="se-pr-content">
+              <a href="https://www.youtube.com/watch?v=Nbs-X0iOeWE" target="_blank" class="se-pr-title">Location based AR</a>
+              <div class="se-pr-authors"><strong>Moritz Cermann</strong></div>
+              <div class="se-pr-venue"></div>
+              <div class="se-pr-links">
+                <a href="https://www.youtube.com/watch?v=Nbs-X0iOeWE" target="_blank">video</a>
+              </div>
+              <div class="se-pr-description">Augmented Reality (AR) application that enables global placement of virtual objects by clicking on 2D map. It converts coordinates to precise AR locations using device sensors and Google Maps API.</div>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+
+
+
+
+
+
+      <div id="app">
+        <!--
+        <div id="country-info" class="country-info hidden">
+          <h3 id="country-name"></h3>
+          <p id="country-details"></p>
+        </div>
+        -->
+        <div class="country-guess-container">
+          <input type="text" id="country-guess" placeholder="Guess the country..." />
+          <div class="guess-feedback" id="guess-feedback"></div>
+        </div>
+        <!--
+        <div class="globe-controls">
+          <button class="control-btn grid-toggle" id="grid-toggle" onclick="toggleGrid()" title="Toggle Grid">
+            <span class="grid-icon">⊞</span>
+          </button>
+          <button class="control-btn info-btn" id="info-btn" onclick="toggleInfo()" title="Information">
+            <span class="info-icon">ℹ</span>
+          </button>
+        </div>
+        <div id="info-popup" class="info-popup hidden">
+          <div class="info-content">
+            <h3>How to Play</h3>
+            <ul>
+              <li><strong>Click</strong> any country on the globe to select it</li>
+              <li><strong>Type</strong> the country name in the input field</li>
+              <li><strong>Green</strong> = Correct guess ✓</li>
+              <li><strong>Red</strong> = Incorrect guess ✗</li>
+              <li><strong>Yellow</strong> = Currently selected</li>
+              <li>You can <strong>re-click</strong> any country to try again!</li>
+            </ul>
+            <button class="close-info" onclick="toggleInfo()">Got it!</button>
+          </div>
+        </div>
+        -->
+      </div>
+    </main>
+
+
+    <button class="globe-button" onclick="scrollToGlobe()"></button>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      function scrollToGlobe() {
+        document.getElementById('app').scrollIntoView({ 
+          behavior: 'smooth' 
+        });
+      }
+    </script>
+  </body>
+</html>

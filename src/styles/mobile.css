@@ -1,0 +1,77 @@
+/* Mobile Overrides - Under 1000px */
+
+@media (max-width: 1150px) {
+  /* Body & Container */
+  body {
+    overflow: auto;
+  }
+  
+  .container {
+    flex-direction: column;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  /* App/Globe Section */
+  #app {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Portfolio Section */
+  #content {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    padding: 15px;
+    direction: ltr;
+    overflow-y: visible;
+  }
+  
+  #content > * {
+    direction: ltr;
+  }
+  
+  /* Header Layout */
+  .info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .bio-content {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    order: -1;
+    margin-bottom: 20px;
+  }
+  
+  /* Typography */
+  .name {
+    font-size: 28px;
+  }
+  
+  /* Institutions */
+  .institutions {
+    justify-content: center;
+  }
+  
+  .institutions img {
+    height: 30px;
+  }
+  
+  /* Globe Elements */
+  .grid-toggle {
+    position: absolute;
+    top: -700px;
+    right: 20px;
+  }
+}
